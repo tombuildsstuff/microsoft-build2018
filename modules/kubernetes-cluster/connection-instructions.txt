@@ -1,0 +1,7 @@
+You can load the credentials for AKS by running:
+
+$ az aks get-credentials --resource-group ${resource_group_name} --name ${name}
+
+You can then connect to the cluster by running:
+
+$ az aks browse --resource-group ${resource_group_name} --name ${name}
