@@ -7,7 +7,6 @@ This repository provisions the following:
 - [Azure Managed Kubernetes Cluster (AKS)](https://azure.microsoft.com/en-us/services/container-service/) ([Terraform Resource: `azurerm_kubernetes_cluster`](https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster.html))
 - [Azure Managed Redis Cache](https://azure.microsoft.com/en-us/services/cache/) ([Terraform Resource: `azurerm_redis_cache`](https://www.terraform.io/docs/providers/azurerm/r/redis_cache.html))
 - [Kubernetes Secret](https://kubernetes.io/docs/concepts/configuration/secret/) ([Terraform Resource: `kubernetes_secret`](https://www.terraform.io/docs/providers/kubernetes/r/secret.html))
-- [Kubernetes Pod](https://kubernetes.io/docs/concepts/workloads/pods/pod/) ([Terraform Resource: `kubernetes_pod`](https://www.terraform.io/docs/providers/kubernetes/r/pod.html))
 
 .. which makes use of the following [Terraform Providers](https://www.terraform.io/docs/providers/index.html):
 
