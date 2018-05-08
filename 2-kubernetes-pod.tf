@@ -15,6 +15,7 @@ resource "kubernetes_namespace" "build2018" {
   }
 }
 
+# We can also store secrets in HashiCorp Vault, or anywhere else
 resource "kubernetes_secret" "redis-connection-string" {
   metadata {
     name      = "redis-connection-string"
@@ -26,18 +27,4 @@ resource "kubernetes_secret" "redis-connection-string" {
   }
 
   type = "kubernetes.io/secret"
-}
-
-resource "kubernetes_pod" "test" {
-  metadata {
-    name      = "terraform-example"
-    namespace = "${kubernetes_namespace.build2018.metadata.0.name}"
-  }
-
-  spec {
-    container {
-      image = "nginx:1.7.9"
-      name  = "example"
-    }
-  }
 }
