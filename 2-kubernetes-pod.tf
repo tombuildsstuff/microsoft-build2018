@@ -11,7 +11,7 @@ provider "kubernetes" {
 
 resource "kubernetes_namespace" "build2018" {
   metadata {
-    name = "microsoft-build2018"
+    name = "build2018"
   }
 }
 
